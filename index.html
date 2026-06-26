@@ -1,63 +1,442 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="style.css">
-    <title>Simão.dev</title>
+    <title>Pedro Simão · Portfólio</title>
 </head>
+
 <body>
     <header>
         <div class="header-container">
             <p class="logo"><i class="bi bi-chevron-right"></i>Simão.dev</p>
             <nav>
-                <button>SOBRE</button>
-                <button>EXPERIÊNCIAS</button>
-                <button>PROJETOS</button>
-                <button>CONTATO</button>
+                <a href="#inicio">INÍCIO</a>
+                <a href="#sobre">SOBRE</a>
+                <a href="#projetos">PROJETOS</a>
+                <a href="#trajetoria">TRAJETÓRIA</a>
+                <a href="#contato">CONTATO</a>
             </nav>
-             <button class="bi bi-sun-fill"></button>
+            <button id="theme-toggle" class="bi bi-sun-fill" aria-label="Alternar tema"></button>
         </div>
     </header>
 
-    <section class="section-1">
-        
-        <div class="main-section">
-            <div class="extras">
-                <div class="ponto"></div>
-                <p class="disponivel">// Disponível para estágios e projetos freelance</p>
+    <main class="main-container">
+        <!-- SEÇÃO HERO -->
+        <section id="inicio" class="section-1">
+            <div class="main-section">
+                <div class="extras">
+                    <div class="ponto"></div>
+                    <p class="disponivel">// Disponível para estágios e projetos freelance</p>
+                </div>
+                <div class="nome">
+                    <h1 class="pedro">PEDRO</h1>
+                    <h1 class="simao">SIMÃO</h1>
+                </div>
+                <div class="sub-titulo1">
+                    <p>ESTUDANTE DE TECNOLOGIA · DESENVOLVEDOR FULL-STACK</p>
+                </div>
+                <div class="sub-titulo2">
+                    <p>Transformo problemas complexos em <span class="destaque">soluções digitais elegantes</span> —
+                        construindo interfaces que pessoas realmente querem usar.</p>
+                </div>
+                <div class="section-btn">
+                    <div class="buttons-sec-btn">
+                        <a href="#contato" class="button1">ENTRE EM CONTATO</a>
+                        <a href="#projetos" class="button2">VER PROJETOS</a>
+                    </div>
+                    <div class="redes">
+                        <a href="https://linkedin.com/in/pedro-simao" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/pedro-simao" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub"><i class="bi bi-github"></i></a>
+                        <a href="mailto:pedrosimao.contato@gmail.com" aria-label="E-mail"><i
+                                class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="nome">
-                <h1 class="pedro">PEDRO</h1>
-                <h1 class="simao">SIMÃO</h1>
+
+            <div class="foto">
+                <div class="hud-container">
+                    <!-- HUD reticle elements -->
+                    <div class="hud-corner top-left"></div>
+                    <div class="hud-corner top-right"></div>
+                    <div class="hud-corner bottom-left"></div>
+                    <div class="hud-corner bottom-right"></div>
+                    <div class="hud-grid"></div>
+                    <div class="hud-ring"></div>
+                    <img src="assets/perfilimagem1.jpg" alt="Foto de perfil de Pedro Simão" class="profile-image">
+                </div>
             </div>
-            <div class="sub-titulo1">
-                <p>ESTUDANTE DE TECNOLIGIA · DESENVOLVEDOR FULL-STACK</p>
-            </div>
-            <div class="sub-titulo2">
-                <p>Transformo problemas complexos em <span class="destaque">soluções digitais elegantes </span> — construindo interfaces que pessoas realmente querem usar.</p>
-            </div>
-        </div>
-        <div class="foto">
-            <img src="assets/perfilimagem1.jpg" alt="">
+        </section>
+
+        <!-- INDICADOR ROLAGEM -->
+        <div class="arrow-down-container">
+            <a href="#sobre" class="arrow-down" aria-label="Rolar para baixo">
+                <i class="bi bi-arrow-down"></i>
+            </a>
         </div>
 
-    </section>
-    <section class="section-btn">
-        <div class="buttons-sec-btn">
-            <button class="button1">ENTRE EM CONTATO</button>
-            <button class="button2">VER PROJETOS</button>
+        <!-- SEÇÃO SOBRE MIM -->
+        <section id="sobre" class="section-2">
+            <div class="section-header">
+                <p class="section-subtitle"><span class="span-verde">// 01</span> SOBRE MIM</p>
+            </div>
+
+            <div class="section-3">
+                <div class="sobre-conteudo">
+                    <h2 class="titulo-pag02">CONSTRUINDO O FUTURO,<br><span class="span-verde">UM PROJETO POR
+                            VEZ</span>.</h2>
+                    <div class="sobre-textos">
+                        <p class="texto-cinza">Sou Pedro Simão, estudante de Análise e Desenvolvimento de Sistemas na
+                            UNIFAP Ceará. Minha paixão por tecnologia começou aos 16 anos quando tive meu primeiro
+                            computador.</p>
+                        <p class="texto-cinza">Atuo no desenvolvimento Full-Stack com foco em interfaces de alta
+                            performance e experiências de usuário intuitivas. Acredito que bom código é aquele que
+                            resolve problemas reais com elegância e clareza.</p>
+                    </div>
+
+                    <div class="areas-atuacao">
+                        <p class="atuacao-titulo">// ÁREAS DE INTERESSE</p>
+                        <ul class="atuacao-lista">
+                            <li><img src="assets/ArrowDireita.svg" alt="Seta" class="bullet-arrow"> Desenvolvimento Web
+                            </li>
+                            <li><img src="assets/ArrowDireita.svg" alt="Seta" class="bullet-arrow"> Design de Interface
+                                (UX/UI)</li>
+                            <li><img src="assets/ArrowDireita.svg" alt="Seta" class="bullet-arrow"> Engenharia de
+                                Software</li>
+                            <li><img src="assets/ArrowDireita.svg" alt="Seta" class="bullet-arrow"> Clean Code</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sobre-habilidades">
+                    <div class="habilidades-topo">
+                        <p class="habilidades-titulo">// FOCO E COMPETÊNCIAS</p>
+                    </div>
+
+                    <div class="habilidades-lista">
+                        <div class="habilidade-item">
+                            <span class="span-verde">&lt;/&gt;</span>
+                            <div class="habilidade-texto">
+                                <strong>Análise e Des. de Sistemas</strong>
+                                <span>UNIFAP Ceará · Cursando</span>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <span class="span-verde">&lt;/&gt;</span>
+                            <div class="habilidade-texto">
+                                <strong>Foco em React & Node</strong>
+                                <span>HTML5, CSS3, JS, TS, React, Node.js</span>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <span class="span-verde">&lt;/&gt;</span>
+                            <div class="habilidade-texto">
+                                <strong>Metodologias Ágeis</strong>
+                                <span>Scrum, Kanban e GitFlow</span>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <span class="span-verde">&lt;/&gt;</span>
+                            <div class="habilidade-texto">
+                                <strong>Práticas de Clean Code</strong>
+                                <span>Refatoração, SOLID e Legibilidade</span>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <span class="span-verde">&lt;/&gt;</span>
+                            <div class="habilidade-texto">
+                                <strong>Git & Versionamento</strong>
+                                <span>Controle de versão e trabalho colaborativo</span>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <span class="span-verde">&lt;/&gt;</span>
+                            <div class="habilidade-texto">
+                                <strong>Banco de Dados Relacional</strong>
+                                <span>Modelagem e manipulação SQL & NoSQL</span>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <span class="span-verde">&lt;/&gt;</span>
+                            <div class="habilidade-texto">
+                                <strong>Inglês Intermediário</strong>
+                                <span>Leitura e comunicação técnica</span>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <span class="span-verde">&lt;/&gt;</span>
+                            <div class="habilidade-texto">
+                                <strong>UX/UI Design</strong>
+                                <span>Prototipagem no Figma e design intuitivo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>SQL</span>
+                        <span>Git</span>
+                        <span>Figma</span>
+                        <span>TypeScript</span>
+                        <span>Tailwind</span>
+                        <span>JavaScript</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO PROJETOS -->
+        <section id="projetos" class="section-projetos">
+            <div class="projetos-header">
+                <div class="projetos-titulo-wrapper">
+                    <p class="section-subtitle"><span class="span-verde">// 02</span> PROJETOS</p>
+                    <h2 class="titulo-sessao">TRABALHOS <span class="span-verde">SELECIONADOS</span></h2>
+                </div>
+                <a href="https://github.com/pedro-simao" target="_blank" rel="noopener noreferrer"
+                    class="ver-todos-link">
+                    Ver todos <img src="assets/ArrowDireita.svg" alt="Seta Direita" class="ver-todos-arrow">
+                </a>
+            </div>
+
+            <div class="projetos-grid">
+                <!-- Card 1 -->
+                <div class="projeto-card">
+                    <div class="projeto-preview preview-financeai">
+                        <div class="projeto-overlay"></div>
+                    </div>
+                    <div class="projeto-info">
+                        <div class="projeto-titulo-linha">
+                            <h3>FINANCE.AI</h3>
+                            <a href="#" class="projeto-link-icon" aria-label="Acessar FinanceAI"><img
+                                    src="assets/Arrow.svg" alt="Link"></a>
+                        </div>
+                        <p>Aplicativo de controle financeiro pessoal com relatórios automatizados, gráficos interativos
+                            e inteligência artificial para categorização de despesas.</p>
+                        <div class="projeto-tags">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="projeto-card">
+                    <div class="projeto-preview preview-portfolio">
+                        <div class="projeto-overlay"></div>
+                    </div>
+                    <div class="projeto-info">
+                        <div class="projeto-titulo-linha">
+                            <h3>PRIMEIRO PORTFÓLIO</h3>
+                            <a href="#" class="projeto-link-icon" aria-label="Acessar Primeiro Portfólio"><img
+                                    src="assets/Arrow.svg" alt="Link"></a>
+                        </div>
+                        <p>Site pessoal desenvolvido para apresentar meus primeiros projetos e habilidades. Layout
+                            limpo, focado em performance e design minimalista.</p>
+                        <div class="projeto-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="projeto-card">
+                    <div class="projeto-preview preview-devbook">
+                        <div class="projeto-overlay"></div>
+                    </div>
+                    <div class="projeto-info">
+                        <div class="projeto-titulo-linha">
+                            <h3>DEVBOOK</h3>
+                            <a href="#" class="projeto-link-icon" aria-label="Acessar Devbook"><img
+                                    src="assets/Arrow.svg" alt="Link"></a>
+                        </div>
+                        <p>Plataforma de rede social voltada exclusivamente para desenvolvedores, com compartilhamento
+                            de snippets de código, fóruns e vagas de emprego.</p>
+                        <div class="projeto-tags">
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>Prisma</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="projeto-card">
+                    <div class="projeto-preview preview-delivery">
+                        <div class="projeto-overlay"></div>
+                    </div>
+                    <div class="projeto-info">
+                        <div class="projeto-titulo-linha">
+                            <h3>APP DELIVERY</h3>
+                            <a href="#" class="projeto-link-icon" aria-label="Acessar App Delivery"><img
+                                    src="assets/Arrow.svg" alt="Link"></a>
+                        </div>
+                        <p>Aplicativo mobile de delivery de comida focada na experiência do usuário, contendo carrinho
+                            em tempo real, pagamentos e rastreamento do entregador.</p>
+                        <div class="projeto-tags">
+                            <span>React Native</span>
+                            <span>Expo</span>
+                            <span>Styled Components</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO TRAJETÓRIA (LINHA DO TEMPO) -->
+        <section id="trajetoria" class="section-timeline">
+            <div class="timeline-header">
+                <p class="section-subtitle"><span class="span-verde">// 03</span> TRAJETÓRIA</p>
+                <h2 class="titulo-sessao">LINHA DO <span class="span-verde">TEMPO</span></h2>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-badge badge-curso">CURSO SUPERIOR</span>
+                        <h3>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</h3>
+                        <span class="timeline-local">UNIFAP Ceará</span>
+                        <p>Início da graduação em ADS, focando em engenharia de requisitos, arquitetura de computadores
+                            e algoritmos estruturados.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-badge badge-trabalho">EXPERIÊNCIA</span>
+                        <h3>DESENVOLVEDOR FRONT-END FREELANCER</h3>
+                        <span class="timeline-local">Freelance</span>
+                        <p>Atuação autônoma na criação de landing pages de alta conversão, portfólios responsivos e
+                            otimização de SEO para negócios locais.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-badge badge-estudo">AUTODIDATA</span>
+                        <h3>ESTUDOS DE PROGRAMAÇÃO WEB</h3>
+                        <span class="timeline-local">Plataformas online & Projetos</span>
+                        <p>Dedicação total ao aprendizado de tecnologias modernas como React, Node.js, Express,
+                            JavaScript moderno (ES6+) e controle de versão com Git.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-badge badge-estudo">CONTATO INICIAL</span>
+                        <h3>PRIMEIRO PROJETO E LÓGICA DE PROGRAMAÇÃO</h3>
+                        <span class="timeline-local">Estudo Autônomo</span>
+                        <p>Primeiro contato com escrita de código utilizando Python. Aprendizado básico de lógica,
+                            variáveis, condicionais, loops e estruturas de dados simples.</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-year">2021</div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-badge badge-tecnico">ENSINO TÉCNICO</span>
+                        <h3>CURSO TÉCNICO EM INFORMÁTICA</h3>
+                        <span class="timeline-local">IFCE Ceará</span>
+                        <p>Introdução aos conceitos de hardware, sistemas operacionais, redes de computadores e
+                            introdução básica ao HTML e CSS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CONTATO -->
+        <section id="contato" class="section-contato">
+            <div class="contato-header">
+                <p class="section-subtitle"><span class="span-verde">// 04</span> CONTATO</p>
+            </div>
+
+            <div class="contato-container">
+                <div class="contato-esquerda">
+                    <h2 class="titulo-contato">VAMOS <span class="span-verde">CONVERSAR?</span></h2>
+                    <p class="texto-cinza">Sinta-se à vontade para entrar em contato se tiver uma oportunidade de
+                        estágio, proposta de projeto freelance ou apenas queira bater um papo sobre tecnologia.</p>
+                </div>
+
+                <div class="contato-direita">
+                    <!-- Email -->
+                    <a href="mailto:pedrosimaocontato@gmail.com" class="contato-card">
+                        <div class="contato-card-detalhes">
+                            <span class="contato-tipo">E-MAIL</span>
+                            <strong class="contato-valor">pedrosimaocontato@gmail.com</strong>
+                        </div>
+                        <div class="contato-card-botao">
+                            <img src="assets/ArrowDireita.svg" alt="Acessar" class="contato-arrow">
+                        </div>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/pedro-sim%C3%A3o-788918271/" target="_blank"
+                        rel="noopener noreferrer" class="contato-card">
+                        <div class="contato-card-detalhes">
+                            <span class="contato-tipo">LINKEDIN</span>
+                            <strong class="contato-valor">linkedin.com/in/pedro-simão</strong>
+                        </div>
+                        <div class="contato-card-botao">
+                            <img src="assets/ArrowDireita.svg" alt="Acessar" class="contato-arrow">
+                        </div>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/Simao-dev" target="_blank" rel="noopener noreferrer"
+                        class="contato-card">
+                        <div class="contato-card-detalhes">
+                            <span class="contato-tipo">GITHUB</span>
+                            <strong class="contato-valor">github.com/Simao-dev</strong>
+                        </div>
+                        <div class="contato-card-botao">
+                            <img src="assets/ArrowDireita.svg" alt="Acessar" class="contato-arrow">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-container">
+            <p class="footer-copy">© 2026 Pedro Simão. Todos os direitos reservados.</p>
+            <a href="assets/CURRICULO.pdf" download class="footer-cv"><i class="bi bi-file-earmark-pdf-fill"></i> Download CV</a>
+            <p class="footer-feito">Desenvolvido com muito café ☕</p>
         </div>
-        <div class="redes">
-            <a href=""><i class="bi bi-linkedin"></i></a>
-            <a href=""><i class="bi bi-github"></i></a>
-            <a href=""><i class="bi bi-envelope-fill"></i></a>
-        </div>
-    </section>
+    </footer>
+    <script src="javascript.js"></script>
 </body>
+
 </html>

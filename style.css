@@ -780,8 +780,8 @@ body[data-theme="light"] .ver-todos-arrow {
     box-shadow: 0 10px 30px var(--sombra-card);
 }
 
-.projeto-preview {
-    height: 200px;
+.projeto-preview img {
+    height: 100%;
     width: 100%;
     position: relative;
     background-size: cover;
